@@ -5,20 +5,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone Grill</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- hero starts here -->
-    <div id="hero">
+    <section id="hero">
         <div class="navbar">
             <img class="logo" src="img/logo.png" alt="">
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -27,43 +29,126 @@
             <p>Grill & Eatery</p>
             <button>View Menu</button>
         </div>
-    </div>
+        <a href="#" class="top"><i class="fa fa-arrow-up"></i></a>
+    </section>
     <!-- hero ends here -->
 
     <!-- welcome starts here -->
-    <div id="welcome">
-        <div class="container info">
+    <section class="welcome">
+        <div class="info animate-left">
             <h2>Stone<br>Grill & Eatery</h2>
             <p>Keep Calm<br>and<br>Eat Strong</p>
-            <!-- <p>slogan and message- appear on scroll, flex col text and image .</p> -->
         </div>
-        <div>
-            <img src="img/welcome.jpg" alt="">
+        <div class="animate-right">
+            <img src="img/dish1.jpg" alt="">
         </div>   
-    </div>
+    </section>
     <!-- welcome ends here -->
 
     <!-- about starts here -->
-    <div class="container" id="about">
+    <section id="about">
         <div class="banner">
             <h3>Stone Grill History</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat ipsum consectetur maiores ullam illum. Et ex quo nulla ut labore? Modi, veritatis! Temporibus labore illo nihil sequi, ipsum eos? Magni ullam laborum, accusantium vel adipisci cumque nisi iusto harum quibusdam. Esse minus molestiae est quisquam.</p>
+            <p>
+                Stone first opened its doors in 1986 and is modeled after famous BBQ restuarants in Texas. The lunch and dinner menu features grilled steaks, chops and seafood prepared in 8 different styles. Featured dishes are given a modern twist by our Head Chef, and our signature desserts are too delicious not to share.
+            </p>
         </div>
-    </div>
+    </section>
     <!-- about ends here -->
+
+    <!-- food display starts here -->
+    <section class="welcome">
+        <div class="animate-left">
+            <img src="img/dish2.jpg" alt="">
+        </div>   
+        <div class="info animate-right">
+            <h3>Delicious Cuisine<br>From Our Grill<br>To Your <br>Table</h3>
+            <div><i class="fa fa-arrow-down"></i></div>
+            <button id="btn">View Menu</button>
+        </div>
+    </section>
+    <!-- food display ends here -->
+
+    <section class="testimonials">
+        <!-- swiper carousel starts here -->
+        <div class="carousel">
+            <div class="swiper-container">
+                <div class="swiper-wrapper profile">
+                    <div class="swiper-slide">
+                        <img src="img/customer1.png" alt="Customer 1 photo">
+                        <p>"Fast service and great attention to detail. Best prices and amazing food."</p>
+                        <p>- Sarah</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/customer2.png" alt="Customer 2 photo">
+                        <p>"The food is excellent, generous portions and great prices. The service was fast and friendly."</p>
+                        <p>- Cho-Yi</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/customer3.png" alt="Customer 3 photo">
+                        <p>"The most amazing food ever! And the staff is so nice to everyone."</p>
+                        <p>- Alexei</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/customer4.png" alt="Customer 4 photo">
+                        <p>"This place knows how to satisfy their clients, and the food is affordably priced."</p>
+                        <p>- Eric</p>
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="img/customer5.png" alt="Customer 5 photo">
+                        <p>"My husband and I ate dinner at Stone last night. The food was absolutely delicious!"</p>
+                        <p>- John and Kelly</p>
+                    </div>
+                </div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </div>
+        <!-- swiper carousel ends here -->
+    </section>
 
     <!-- contact starts here -->
     <section id="contact">
-        <p>contact info: email, tel no., address, map</p>
+        <div class="details1">
+            <div>
+                <h3>Our Location</h3>
+                <p>Address:</p>
+                <p>123 Anywhere Street</p>
+                <p>Toronto, Ontario</p>
+                <p>A1B 2C3</p>
+            </div>
+            <div class="details-space">
+                <h3>Opening Hours</h4>
+                <p>Mon-Sun: 11am-10pm</p>
+            </div>
+        </div>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2885.9170736517813!2d-79.38876088714103!3d43.67069445761541!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x62b848822b5dc202!2sJack%20Astor&#39;s%20Bar%20%26%20Grill%20Yonge%20%26%20Bloor!5e0!3m2!1sen!2sus!4v1619119875079!5m2!1sen!2sus" width="350" height="200" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="details2">
+            <div>
+                <h3>Contact Us</h3>
+                <p>Email:</p>
+                <p>stone@gmail.com</p>
+                <p>Telephone: </p>
+                <p>123-456-5555</p>
+            </div>
+            <div class="details-space">
+                <h3>Follow Stone</h4>
+                <a href="#" class="social"><i class="fa fa-facebook-square"></i></a>
+                <a href="#" class="social"><i class="fa fa-twitter"></i></a>
+                <a href="#" class="social"><i class="fa fa-instagram"></i></a>
+                <a href="#" class="social"><i class="fa fa-pinterest"></i></a>
+                <a href="#" class="social"><i class="fa fa-tripadvisor"></i></a>
+            </div>
+        </div>
     </section>
     <!-- contact ends here -->
 
-    <!-- footer starts here -->
-    <footer>
-        <p>Social Icons: twitter, facebook, instagram, pinterest, trip advisor</p>
-    </footer>
-    <!-- footer ends here -->
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
