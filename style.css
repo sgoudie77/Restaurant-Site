@@ -13,6 +13,10 @@ body {
   scroll-behavior: smooth;
   transition: 0.5s;
 }
+
+.menubg {
+  background-color: #000;
+}
 /* Global styles end here */
 
 /* Hero section styles start here */
@@ -49,6 +53,10 @@ body {
 .logo:hover {
   transform: scale(1.05);
   transition: 0.5s ease;
+}
+
+.dark {
+  color: #000000;
 }
 
 .navbar ul li {
@@ -344,6 +352,17 @@ body {
 /* Contact styles end here */
 
 /* Menu styles start here */
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  justify-content: center;
+  position: relative;
+}
+
 .menu {
   padding: 5rem 0;
 }
@@ -351,6 +370,14 @@ body {
 .title {
   text-align: center;
   margin-bottom: 2rem;
+  color: #fff;
+  
+}
+
+.title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 6em;
+  font-weight: 100;
 }
 
 .underline {
@@ -386,25 +413,64 @@ body {
   color: #fff;
 }
 
-.section-center {
+/* .section-center {
   width: 90vw;
   margin: 0 auto;
   max-width: 1200px;
   display: grid;
-  grid-gap: 2rem 3rem;
+  gap: 2rem 3rem;
   justify-items: center;
-}
+} */
 
 .menu-item {
   display: grid;
   grid-gap: 1rem 2rem;
   max-width: 25rem;
+
+  width: 90vw;
+  margin: 0 auto;
+  justify-items: center;
+  margin-bottom: 4em;
+}
+
+.menu-item.hide {
+  display: none;
+}
+
+.menu-item.show {
+  display: block;
+  animation: showItem 0.5s ease;
+}
+
+@-webkit-keyframes showItem {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes showItem {
+  0% {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
 }
 
 .photo {
   object-fit: cover;
-  height: 200px;
-  width: 200px;
+  height: 250px;
+  width: 300px;
   border: 0.25rem solid gold;
   border-radius: 5px;
 }
@@ -413,10 +479,13 @@ body {
   display: flex;
   justify-content: space-between;
   border-bottom: 0.5px dotted gray;
+  width: 300px;
 }
 
 .item-info h4 {
   margin-bottom: 0.5rem;
+  width: 300px;
+  color: #fff;
 }
 
 .price {
@@ -426,5 +495,7 @@ body {
 .item-text {
   margin-bottom: 0;
   padding-top: 1rem;
+  width: 300px;
+  color: #fff;
 }
 /* Menu styles end here */

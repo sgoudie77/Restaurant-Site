@@ -22,4 +22,4 @@ This project is a website for a restaurant which includes a JavaScript menu filt
 The code for this project was inspired by multiple YouTube tutorials, and the JavaScript for the menu filter was adapted from FreeCodeCamp tutorials. In future updates, this project will include
 
 - an additional page with a menu filter for categories of menu items
-- an appear on scroll function using jQuery
+- header images on the menu page which change according to the category selected

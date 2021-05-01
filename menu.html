@@ -5,19 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone Grill</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="menubg">
     <!-- nav section starts -->
     <div class="navbar">
         <img class="logo" src="img/logo.png" alt="">
         <nav>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="menu.html">Menu</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
             </ul>
         </nav>
     </div>
@@ -33,36 +33,193 @@
         <!-- title ends -->
 
         <!-- filter button area start-->
-        <div class="btn-area">
-            <button class="filter-btn" type="button" data-id="all">All</button>
-            <button class="filter-btn" type="button" data-id="starters">Starters</button>
-            <button class="filter-btn" type="button" data-id="mains">Mains</button>
-            <button class="filter-btn" type="button" data-id="drinks">drinks</button>
-            <button class="filter-btn" type="button" data-id="desserts">Desserts</button>
+        <div class="btn-area menu-filter">
+            <button class="filter-btn active" type="button" data-filter="all">All</button>
+            <button class="filter-btn" type="button" data-filter="starters">Starters</button>
+            <button class="filter-btn" type="button" data-filter="mains">Mains</button>
+            <button class="filter-btn" type="button" data-filter="drinks">drinks</button>
+            <button class="filter-btn" type="button" data-filter="desserts">Desserts</button>
         </div>
-        <!-- filter button area end-->
+        <!-- filter button area end -->
 
         <!-- menu items start -->
-        <div class="section-center">
-            <!-- each menu item start -->
-            <article class="menu-item">
-                <img src="" class="photo" alt="Menu Item">
-                <div class="item-info">
-                    <header>
-                        <h4>First Item</h4>
-                        <h4 class="price">$15</h4>
-                    </header>
-                    <p class="item-text">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
-                    </p>
+        <div class="row">
+            <!-- <div class="section-center"> -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="starters">
+                    <img src="img/starter1.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Chicken Wings</h4>
+                            <h4 class="price">$8.49</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
                 </div>
-            </article>
-            <!-- each menu item end -->
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="starters">
+                    <img src="img/starter2.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Garden Salad</h4>
+                            <h4 class="price">$6.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="starters">
+                    <img src="img/starter3.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Chicken Soup</h4>
+                            <h4 class="price">$7.25</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="mains">
+                    <img src="img/dish1.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Filet Minon</h4>
+                            <h4 class="price">$25.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="mains">
+                    <img src="img/dish2.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Grilled Salmon</h4>
+                            <h4 class="price">$21.50</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="mains">
+                    <img src="img/dish3.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Roast Pork</h4>
+                            <h4 class="price">$23.50</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="drinks">
+                    <img src="img/drink1.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Draught Beer</h4>
+                            <h4 class="price">$4.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="drinks">
+                    <img src="img/drink2.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>House wine</h4>
+                            <h4 class="price">$5.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="drinks">
+                    <img src="img/drink3.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Fruit Shake</h4>
+                            <h4 class="price">$3.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="img/dessert1.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Strawberry Pastry</h4>
+                            <h4 class="price">$6.50</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="img/dessert2.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Ice Cream</h4>
+                            <h4 class="price">$3.99</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+                <!-- each menu item start -->
+                <div class="menu-item" data-category="desserts">
+                    <img src="img/dessert3.png" class="photo" alt="Menu Item">
+                    <div class="item-info">
+                        <header>
+                            <h4>Cheesecake</h4>
+                            <h4 class="price">$4.25</h4>
+                        </header>
+                        <p class="item-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
+                        </p>
+                    </div>
+                </div>
+                <!-- each menu item end -->
+            <!-- </div> -->
         </div>
         <!-- menu items end -->
     </section>
     <!-- main menu ends -->
 
-    <script src="script.js"></script>
+    <script src="menu.js"></script>
+    <!-- <script src="script.js"></script> -->
 </body>
 </html>
