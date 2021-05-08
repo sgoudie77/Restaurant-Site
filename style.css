@@ -385,11 +385,6 @@ a {
   z-index: -1;
 }
 
-.splash .logo,
-.splash nav {
-  padding-top: -3em;
-}
-
 .menu {
   padding: .5rem 0;
   /* padding-top: 10.5%; */
