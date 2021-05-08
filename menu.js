@@ -1,137 +1,37 @@
-// MENU FILTER for food category items
-  // menu items array
-//   const menu = [
-//     {
-//         id: 1,
-//         title: "Starter1",
-//         category: "starters",
-//         price: 15.99,
-//         img: "img/starter1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 2,
-//         title: "Starter2",
-//         category: "starters",
-//         price: 15.99,
-//         img: "img/starter1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 3,
-//         title: "Starter3",
-//         category: "starters",
-//         price: 15.99,
-//         img: "img/starter1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 4,
-//         title: "Main1",
-//         category: "mains",
-//         price: 15.99,
-//         img: "img/main1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 5,
-//         title: "Main2",
-//         category: "mains",
-//         price: 15.99,
-//         img: "img/main2.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 6,
-//         title: "Main3",
-//         category: "mains",
-//         price: 15.99,
-//         img: "img/main3.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 7,
-//         title: "Drink1",
-//         category: "drinks",
-//         price: 15.99,
-//         img: "img/drink1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 8,
-//         title: "Drink2",
-//         category: "drinks",
-//         price: 15.99,
-//         img: "img/drink2.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 9,
-//         title: "Drink3",
-//         category: "drinks",
-//         price: 15.99,
-//         img: "img/drink3.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 10,
-//         title: "Dessert1",
-//         category: "desserts",
-//         price: 15.99,
-//         img: "img/dessert1.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 11,
-//         title: "Dessert2",
-//         category: "desserts",
-//         price: 15.99,
-//         img: "img/dessert2.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-//     {
-//         id: 12,
-//         title: "Dessert3",
-//         category: "desserts",
-//         price: 15.99,
-//         img: "img/dessert3.jpg",
-//         desc: `Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed distinctio amet porro aliquam reprehenderit at. Corrupti maiores recusandae nobis consequuntur.`,
-//     },
-// ];
-
-// select the menu area
-// const sectionCenter = document.querySelector(".section-center");
-
-// display menu items
-// window.addEventListener("DOMContentLoaded", function () {
-//     let displayMenu = menu.map(function (item) {
-//         return `<article class="menu-item">
-//                     <img src=${item.img} alt=${item.title} class="photo">
-//                     <div class="item-info">
-//                         <header>
-//                             <h4>${item.title}</h4>
-//                             <h4 class="price">$${item.price}</h4>
-//                         </header>
-//                         <p class="item-text">
-//                             ${item.desc}
-//                         </p>    
-//                     </div>
-//                 </article>`;
-//     });
-//     displayMenu = displayMenu.join("");
-    //console.log(displayMenu);
-
-//     sectionCenter.innerHTML = displayMenu;
-// });
-
-
-// new menu filter 2nd attempt
+// MENU FILTER
+// Set Menu Filter Variables
 const filterContainer = document.querySelector(".menu-filter");
 const filterBtns = filterContainer.children;
 const totalFilterBtns = filterBtns.length;
 const menuItems = document.querySelectorAll(".menu-item");
 const totalMenuItems = menuItems.length;
+const splash = document.querySelector(".splash");
 
+// Set Splash Image Variables
+let all = document.querySelector('#all');
+let starters = document.querySelector('#starters');
+let mains = document.querySelector('#mains');
+let drinks = document.querySelector('#drinks');
+let desserts = document.querySelector('#desserts');
+
+// Add Event Listeners for Splash Image Changes
+all.addEventListener('click', () => {
+    splash.style.backgroundImage = "url(img/splash-all.png)";
+})
+starters.addEventListener('click', () => {
+    splash.style.backgroundImage = "url(img/splash-starters.png)";
+})
+mains.addEventListener('click', () => {
+    splash.style.backgroundImage = "url(img/splash-main2.png)";
+})
+drinks.addEventListener('click', () => {
+    splash.style.backgroundImage = "url(img/splash-drinks.png)";
+})
+desserts.addEventListener('click', () => {
+    splash.style.backgroundImage = "url(img/splash-desserts2.png)";
+})
+
+// Filter and Display Items for the Selected Category
 for(let i = 0; i < totalFilterBtns; i++){
     filterBtns[i].addEventListener("click", function(){
         filterContainer.querySelector(".active").classList.remove("active");

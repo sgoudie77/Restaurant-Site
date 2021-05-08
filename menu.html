@@ -5,13 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stone Grill</title>
-    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="menubg">
+<body>
     <!-- nav section starts -->
     <div class="navbar">
-        <img class="logo" src="img/logo.png" alt="">
+        <a href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -23,6 +23,10 @@
     </div>
     <!-- nav section ends -->
     
+    <!-- splash image section starts here -->
+    <div class="splash"></div>
+    <!-- splash image section ends here -->
+
     <!-- main menu starts -->
     <section class="menu">
         <!-- title starts -->
@@ -34,11 +38,11 @@
 
         <!-- filter button area start-->
         <div class="btn-area menu-filter">
-            <button class="filter-btn active" type="button" data-filter="all">All</button>
-            <button class="filter-btn" type="button" data-filter="starters">Starters</button>
-            <button class="filter-btn" type="button" data-filter="mains">Mains</button>
-            <button class="filter-btn" type="button" data-filter="drinks">drinks</button>
-            <button class="filter-btn" type="button" data-filter="desserts">Desserts</button>
+            <button class="filter-btn active" id="all" type="button" data-filter="all">All</button>
+            <button class="filter-btn" id="starters" type="button" data-filter="starters">Starters</button>
+            <button class="filter-btn" id="mains" type="button" data-filter="mains">Mains</button>
+            <button class="filter-btn" id="drinks" type="button" data-filter="drinks">drinks</button>
+            <button class="filter-btn" id="desserts" type="button" data-filter="desserts">Desserts</button>
         </div>
         <!-- filter button area end -->
 
@@ -92,7 +96,7 @@
                     <img src="img/dish1.png" class="photo" alt="Menu Item">
                     <div class="item-info">
                         <header>
-                            <h4>Filet Minon</h4>
+                            <h4>Filet Mignon</h4>
                             <h4 class="price">$25.99</h4>
                         </header>
                         <p class="item-text">
@@ -107,7 +111,7 @@
                     <div class="item-info">
                         <header>
                             <h4>Grilled Salmon</h4>
-                            <h4 class="price">$21.50</h4>
+                            <h4 class="price">$21.49</h4>
                         </header>
                         <p class="item-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
@@ -121,7 +125,7 @@
                     <div class="item-info">
                         <header>
                             <h4>Roast Pork</h4>
-                            <h4 class="price">$23.50</h4>
+                            <h4 class="price">$23.49</h4>
                         </header>
                         <p class="item-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
@@ -177,7 +181,7 @@
                     <div class="item-info">
                         <header>
                             <h4>Strawberry Pastry</h4>
-                            <h4 class="price">$6.50</h4>
+                            <h4 class="price">$6.49</h4>
                         </header>
                         <p class="item-text">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod iste soluta minus odit.
@@ -218,6 +222,8 @@
         <!-- menu items end -->
     </section>
     <!-- main menu ends -->
+
+    <a href="#" class="top"><i class="fa fa-arrow-up"></i></a>
 
     <script src="menu.js"></script>
     <!-- <script src="script.js"></script> -->
