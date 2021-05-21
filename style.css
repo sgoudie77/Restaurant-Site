@@ -13,6 +13,7 @@ body {
   scroll-behavior: smooth;
   transition: 0.5s;
 }
+
 a {
   text-decoration: none;
 }
@@ -52,10 +53,6 @@ a {
   transform: scale(1.05);
   transition: 0.5s ease;
 }
-
-/* .dark {
-  color: #000000;
-} */
 
 .navbar ul li {
   list-style: none;
@@ -97,7 +94,6 @@ a {
   text-align: left;
   padding-left: 7%;
   align-items: center;
-  /* color: #ffffff; */
   transform: translateY(50%);
 }
 
@@ -160,11 +156,25 @@ a {
   position: relative;
   display: flex;
   height: 100vh;
+  width: 100%;
   align-items: center;
-  justify-content: space-evenly;
+  /* justify-content: space-evenly; */
+  justify-content: center;
   padding: 25px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 
+}
+
+.display-text,
+.display-dish {
+  width: 50%;
+}
+
+.animate-left.display-dish,
+.animate-right.display-dish {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .info {
@@ -180,7 +190,7 @@ a {
 
 .info p {
   font-size: 2.2rem;
-  color: darkgray;
+  color: #3a3b3c;
   font-weight: 300;
   margin-top: -.5em;
 }
@@ -194,10 +204,13 @@ a {
 }
 
 .welcome img {
-  height: 450px;
-  width: 650px;
-  margin-left: 20px;
+  position: relative;
+  display: flex;
+  width: 95%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  text-align: center;
+  
 }
 /* Welcome section styles end here */
 
@@ -206,6 +219,7 @@ a {
   position: relative;
   background: url(img/about.jpg);
   height: 100vh;
+  width: 100%;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -344,21 +358,6 @@ a {
   color: gold;
   transition: 0.2s ease;
 }
-
-/* .map-responsive{
-    overflow:hidden;
-    padding-bottom:56.25%;
-    position:relative;
-    height:0;
-}
-
-.map-responsive iframe{
-    left:0;
-    top:0;
-    height:100%;
-    width:100%;
-    position:absolute;
-} */
 /* Contact styles end here */
 
 /* Menu styles start here */
@@ -374,11 +373,7 @@ a {
 }
 
 .splash {
-  /* position: absolute;
-  top: 0;
-  left: 0; */
   background: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url(img/splash-all.png);
-  /* height: 32vh; */
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -387,15 +382,12 @@ a {
 
 .menu {
   padding: .5rem 0;
-  /* padding-top: 10.5%; */
-
 }
 
 .title {
   text-align: center;
   margin-bottom: 2rem;
   color: #000;
-  
 }
 
 .title h2 {
@@ -488,7 +480,6 @@ a {
   object-fit: cover;
   height: 250px;
   width: 300px;
-  /* border: 0.2rem solid #000; */
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   border-radius: 5px;
 }
@@ -518,3 +509,104 @@ a {
   color: #000;
 }
 /* Menu styles end here */
+
+/* Responsive styles start here */
+@media (max-width: 1100px) {
+  #title h1 {
+    font-size: 75px;
+  }
+  .info h2 {
+    font-size: 3rem;
+  }
+  .info p {
+    font-size: 1.8rem;
+  }
+  .welcome h3 {
+    font-size: 2.5rem;
+  }
+}
+@media (max-width: 991px) {
+  .info h2 {
+    font-size: 2.5rem;
+  }
+  .info p {
+    font-size: 1.5rem;
+  }
+  .welcome h3 {
+    font-size: 2rem;
+  }
+  .filter-btn {
+    padding: 0.25rem 0.4rem;
+  }
+  #down {
+    margin-top: .2em;
+  }
+}
+@media (max-width: 799px) {
+  .banner h3 {
+    font-size: 25px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .info h2 {
+    font-size: 1.8rem;
+  }
+  .info p {
+    font-size: 1.1rem;
+  }
+  .welcome h3 {
+    font-size: 1.4rem;
+  }
+  .details1 {
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+  .details2 {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .details1 h3,
+  .details2 h3 {
+    font-size: 1rem;
+  }
+  .details1 p,
+  .details2 p {
+    font-size: .8rem;
+  }
+  .details-space {
+    margin-top: 1rem;
+  }
+  .map-responsive iframe {
+    width: 250px;
+    height: 160px;
+  }
+  .social {
+    padding-right: 0.25rem;
+  }
+  .details2 .fa {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 678px) {
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .swiper-slide img {
+    height: 220px;
+    width: 220px;
+  }
+  .swiper-slide p {
+    font-size: .9rem;
+  }
+  .title h2 {
+    font-size: 10px;
+  }
+}
+@media (max-width: 550px) {
+  .navbar ul li {
+    margin: 0 5px;
+    font-size: .9rem;
+  }
+}
+/* Responsive styles end here */
