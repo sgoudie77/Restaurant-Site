@@ -158,11 +158,8 @@ a {
   height: 100vh;
   width: 100%;
   align-items: center;
-  /* justify-content: space-evenly; */
   justify-content: center;
   padding: 25px;
-  /* margin-top: 10px; */
-
 }
 
 .display-text,
@@ -207,6 +204,8 @@ a {
   position: relative;
   display: flex;
   width: 95%;
+  height: auto;
+  max-height: 65%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   justify-content: center;
 }
