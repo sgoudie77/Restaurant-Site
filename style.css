@@ -209,8 +209,10 @@ a {
   width: 95%;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.5);
   justify-content: center;
-  text-align: center;
-  
+}
+
+#pad-right {
+  margin-right: 5%;
 }
 /* Welcome section styles end here */
 
@@ -260,6 +262,10 @@ a {
 .welcome h3 {
   font-size: 3rem;
   font-weight: 200;
+}
+
+#pad-left {
+  margin-left: 5%;
 }
 
 #down {
@@ -600,13 +606,134 @@ a {
     font-size: .9rem;
   }
   .title h2 {
-    font-size: 10px;
+    font-size: 4em;
   }
 }
 @media (max-width: 550px) {
   .navbar ul li {
     margin: 0 5px;
     font-size: .9rem;
+  }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+  .banner h3 {
+    font-size: 25px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .info h2 {
+    font-size: 1.8rem;
+  }
+  .info p {
+    font-size: 1.1rem;
+  }
+  .welcome h3 {
+    font-size: 1.4rem;
+  }
+  .details1 {
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+  .details2 {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .details1 h3,
+  .details2 h3 {
+    font-size: 1rem;
+  }
+  .details1 p,
+  .details2 p {
+    font-size: .8rem;
+  }
+  .details-space {
+    margin-top: 1rem;
+  }
+  .map-responsive iframe {
+    width: 250px;
+    height: 160px;
+  }
+  .social {
+    padding-right: 0.25rem;
+  }
+  .details2 .fa {
+    font-size: 1rem;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .swiper-slide img {
+    height: 220px;
+    width: 220px;
+  }
+  .swiper-slide p {
+    font-size: .9rem;
+  }
+  .title h2 {
+    font-size: 4em;
+  }
+}
+@media only screen and (max-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
+  .banner h3 {
+    font-size: 25px;
+  }
+  .banner p {
+    font-size: 16px;
+  }
+  .info h2 {
+    font-size: 1.8rem;
+  }
+  .info p {
+    font-size: 1.1rem;
+  }
+  .welcome h3 {
+    font-size: 1.4rem;
+  }
+  .details1 {
+    text-align: right;
+    padding-right: 1.5rem;
+  }
+  .details2 {
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+  .details1 h3,
+  .details2 h3 {
+    font-size: 1rem;
+  }
+  .details1 p,
+  .details2 p {
+    font-size: .8rem;
+  }
+  .details-space {
+    margin-top: 1rem;
+  }
+  .map-responsive iframe {
+    width: 250px;
+    height: 160px;
+  }
+  .social {
+    padding-right: 0.25rem;
+  }
+  .details2 .fa {
+    font-size: 1rem;
+  }
+
+  .navbar ul li {
+    margin: 0 10px;
+  }
+  .swiper-slide img {
+    height: 220px;
+    width: 220px;
+  }
+  .swiper-slide p {
+    font-size: .9rem;
+  }
+  .title h2 {
+    font-size: 4em;
   }
 }
 /* Responsive styles end here */
