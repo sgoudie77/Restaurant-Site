@@ -567,6 +567,7 @@ a {
   }
   .welcome .info h2 {
     font-size: 3.2rem;
+    padding-top: 25px;
   }
   .info p {
     font-size: 1.8rem;
@@ -586,6 +587,7 @@ a {
     width: 75%;
     height: 100%;
     align-items: center;
+    padding-bottom: 15px;
   }
   .display-text {
     padding-bottom: 15px;
@@ -627,6 +629,16 @@ a {
   .details2 .fa {
     font-size: 1rem;
   }
+  #menu-title {
+    font-size: 2.5rem;
+  }
+  .btn-area.menu-filter .filter-btn {
+    font-size: .7rem;
+    margin: 0 0.1rem;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 0.3rem 0.3rem;
+  }
 }
 @media (max-width: 678px) {
   .navbar ul li {
@@ -645,10 +657,9 @@ a {
 }
 @media (max-width: 550px) {
   .navbar ul li {
-    margin: 0 2px;
+    margin: 0 4px;
     font-size: .7rem;
   }
-  
 }
 
 @media only screen and (max-width: 768px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) {
@@ -817,7 +828,7 @@ a {
     font-size: 1rem;
   }
   .navbar ul li {
-    margin: 0 2px;
+    margin: 0 4px;
     font-size: .7rem;
   }
   .swiper-slide img {
