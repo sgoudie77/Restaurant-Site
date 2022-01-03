@@ -288,13 +288,18 @@ a {
 
 .carousel {
   position: relative;
-  display: flex;
   text-align: center;
   height: 400px;
   background-image: url(img/customers3.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   padding-top: 2.5rem;
+}
+
+.swiper-slide {
+  width: 90%;
+  height: 400px;
 }
 
 .swiper-slide img {
